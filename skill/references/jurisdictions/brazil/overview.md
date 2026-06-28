@@ -7,7 +7,7 @@ description: Marco Legal das Criptomoedas, divisão BCB / CVM, Receita Federal, 
 
 Brazil regulates crypto through a layered framework: a 2022 federal "Marco Legal" sets the regime; the Banco Central do Brasil (BCB) administers the prestador-de-serviços-de-ativos-virtuais (PSAV) authorization; the Comissão de Valores Mobiliários (CVM) classifies tokens that are securities under Brazilian law; the Receita Federal handles tax; ANPD enforces LGPD; COAF coordinates AML reporting.
 
-**Confidence:** HIGH for the framework; HIGH for LGPD; HIGH for the BCB Resoluções 350-355 series (current as of 2026-06; verify any specific timeline against the BCB publication calendar).
+**Confidence:** HIGH for the framework; HIGH for LGPD; HIGH for the BCB Resoluções 519/520/521 (published 10 Nov 2025, in force 2 Feb 2026; verify any specific provision against the BCB publication calendar).
 **Last statutory review:** 2026-06-15.
 
 > *English-language content for v0.1. Portuguese translation is planned for v0.2 — see [TODO.md §L](../../../../TODO.md). The headline above is bilingual to reflect intended audience.*
@@ -16,9 +16,9 @@ Brazil regulates crypto through a layered framework: a 2022 federal "Marco Legal
 
 | Regulator | What they regulate | Load-bearing authority |
 |---|---|---|
-| **BCB** (Banco Central do Brasil) | Prestador de Serviços de Ativos Virtuais (PSAV) regime: authorization, AML, prudential, segregation, market integrity | Lei nº 14.478/2022; Decreto nº 11.563/2023 (designates BCB as regulator); BCB Resoluções 350/2025, 351/2025, 352/2025, 353/2025, 354/2025, 355/2025 (the PSAV regulatory framework) + accompanying Comunicados |
+| **BCB** (Banco Central do Brasil) | Prestador de Serviços de Ativos Virtuais (PSAV) regime: authorization, AML, prudential, segregation, market integrity | Lei nº 14.478/2022; Decreto nº 11.563/2023 (designates BCB as regulator); BCB Resoluções 519, 520 and 521 (10 Nov 2025; the PSAV regulatory framework) + accompanying Comunicados |
 | **CVM** (Comissão de Valores Mobiliários) | Tokens that meet the Brazilian definition of "valor mobiliário" (security); offerings, trading platforms for security tokens | Lei nº 6.385/1976; CVM Parecer de Orientação nº 40/2022 (token classification framework); CVM Resolução 175 (FIDC tokens); CVM Resolução 88 (investment crowdfunding) |
-| **Receita Federal do Brasil** (Federal Tax Authority) | Tax reporting; capital gains; offshore + crypto reporting | Lei 8.981/1995; Instrução Normativa RFB nº 1.888/2019 (crypto reporting); IN RFB nº 2.178/2024 (offshore + crypto) |
+| **Receita Federal do Brasil** (Federal Tax Authority) | Tax reporting; capital gains; offshore + crypto reporting | Lei 8.981/1995; Instrução Normativa RFB nº 1.888/2019 (crypto reporting); IN RFB nº 2.180/2024 (offshore + crypto) |
 | **ANPD** (Autoridade Nacional de Proteção de Dados) | LGPD enforcement; data-subject rights; breach notification; DPO supervision | Lei nº 13.709/2018 (LGPD); Resolução CD/ANPD nº 4/2023 (sanction calculation — dosimetria); Resolução CD/ANPD nº 2/2022 (small enterprises); Resolução CD/ANPD nº 1/2021 (regulatory regulation) |
 | **COAF** (Conselho de Controle de Atividades Financeiras) | Suspicious-activity reporting; AML coordination across financial sector | Lei nº 9.613/1998 (Lavagem de Dinheiro); COAF Resoluções; Circular BCB |
 | **SUSEP** (Superintendência de Seguros Privados) | Insurance + crypto-insurance edge cases | Decreto-Lei 73/1966; rare relevance to a typical Solana founder |
@@ -35,24 +35,21 @@ The foundational statute. Eight articles + transitional provisions. Key concepts
 
 Tokens classified as **valores mobiliários** (securities under Lei 6.385/1976) remain under CVM jurisdiction, not BCB. Stablecoins / payment tokens / utility tokens / governance tokens that are not securities under Brazilian law fall under BCB's PSAV regime.
 
-## BCB PSAV framework (Resoluções 350-355 series, 2025)
+## BCB PSAV framework (Resoluções 519/520/521, Nov 2025)
 
 The BCB regulatory framework details:
 
 | Resolução | Scope (summary) |
 |---|---|
-| **Res 350/2025** | PSAV authorization process — application, capital requirements, governance |
-| **Res 351/2025** | PSAV prudential requirements |
-| **Res 352/2025** | PSAV conduct of business + customer protection |
-| **Res 353/2025** | PSAV AML + KYC obligations + COAF reporting integration |
-| **Res 354/2025** | Segregation of customer assets + custody requirements |
-| **Res 355/2025** | Transitional regime + grandfathering for pre-existing operations |
+| **Res 519/2025** | Who may act as a PSAV — provider segments/types and the authorization requirement |
+| **Res 520/2025** | Constitution, functioning, prudential and conduct rules for PSAVs (governance, AML, customer-asset segregation, market integrity) |
+| **Res 521/2025** | Foreign-exchange treatment of fiat-referenced virtual-asset transfers (stablecoin transfers treated as FX operations); cross-border settlement |
 
-*Note: the specific Resolução numbers and titles reflect the BCB Resoluções 350-355 series published in 2025. Verify the current published text directly via the BCB website (`bcb.gov.br`) — the BCB Comunicados may amend specific provisions; calendar-pinned to 2026-06.*
+*Note: BCB Resoluções 519, 520 and 521 were published 10 Nov 2025 and take effect 2 Feb 2026 (with Res. 561 on the eFX market alongside). The scope summaries above are grouped for orientation — verify the exact provision-to-resolution mapping in the published text via the BCB website (`bcb.gov.br`); calendar-pinned to 2026-06.*
 
 A foreign-incorporated PSAV serving Brazilian residents needs to consider:
 
-- Authorization requirement (BCB Res 350) — applies to professional provision of services to Brazilian users.
+- Authorization requirement (BCB Res 519) — applies to professional provision of services to Brazilian users.
 - "Active solicitation" trigger — passive reverse-solicitation defense is narrow.
 - COAF reporting obligations may apply to certain transaction types regardless of registration status.
 
@@ -91,7 +88,7 @@ ANPD has been actively enforcing since 2023:
 ## Tax (Receita Federal)
 
 - **IN RFB nº 1.888/2019** — crypto transaction reporting obligation: monthly DEC RF report for exchanges; individuals report if monthly transactions > R$ 30,000.
-- **IN RFB nº 2.178/2024** — additional reporting for offshore + crypto holdings.
+- **IN RFB nº 2.180/2024** — additional reporting for offshore + crypto holdings.
 - **Capital gains** — pessoa física (individual): progressive 15-22.5% rate (Lei 13.259/2016, art. 21); pessoa jurídica (legal entity): lucro real or lucro presumido regime.
 - **Stablecoin transfers + remittance** — may trigger IOF (Imposto sobre Operações Financeiras) considerations and Receita reporting.
 
@@ -101,7 +98,7 @@ A monthly crypto transaction threshold below R$ 30,000 for individuals does not 
 
 - **Lei 9.613/1998** — base AML statute (Lavagem de Dinheiro).
 - **BCB Circular** + COAF Resoluções — sectoral AML requirements.
-- PSAVs under BCB Res 353/2025 integrate KYC + transaction monitoring + COAF suspicious-activity reporting + record retention.
+- PSAVs under BCB Resolução 520/2025 integrate KYC + transaction monitoring + COAF suspicious-activity reporting + record retention.
 - Travel Rule analogue is implemented at the PSAV level; reporting thresholds and timelines per current BCB + COAF guidance.
 
 ## Domain anchors
@@ -110,7 +107,7 @@ A monthly crypto transaction threshold below R$ 30,000 for individuals does not 
 |---|---|
 | Securities classification (CVM PO 40) | [`../../domains/securities-law.md`](../../domains/securities-law.md) + [`../../domains/tokenomics-legality.md`](../../domains/tokenomics-legality.md) |
 | AML / KYC / COAF | [`../../domains/aml-kyc.md`](../../domains/aml-kyc.md) |
-| Tax (IN RFB 1888 / 2178) | [`../../domains/tax.md`](../../domains/tax.md) |
+| Tax (IN RFB 1888 / 2180) | [`../../domains/tax.md`](../../domains/tax.md) |
 | Privacy (LGPD + ANPD) | [`../../domains/privacy-data-protection.md`](../../domains/privacy-data-protection.md) |
 | Sanctions | [`../../domains/sanctions.md`](../../domains/sanctions.md) (Brazil does not have a parallel OFAC-style regime; international sanctions reach via UN + treaty + COAF channels) |
 
@@ -123,4 +120,4 @@ A monthly crypto transaction threshold below R$ 30,000 for individuals does not 
 
 ---
 
-*Current as of 2026-06. Last statutory review: 2026-06-15. Confidence: HIGH for the framework + LGPD; MEDIUM for specific BCB Resolução 350-355 implementation timelines — verify against the BCB publication calendar. Portuguese translation planned for v0.2 (see [TODO.md §L](../../../../TODO.md)). Informational only — not legal advice / não constitui parecer jurídico.*
+*Current as of 2026-06. Last statutory review: 2026-06-15. Confidence: HIGH for the framework + LGPD; MEDIUM for specific BCB Resolução 519/520/521 implementation timelines — verify against the BCB publication calendar. Portuguese translation planned for v0.2 (see [TODO.md §L](../../../../TODO.md)). Informational only — not legal advice / não constitui parecer jurídico.*

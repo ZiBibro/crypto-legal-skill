@@ -60,7 +60,7 @@ T-90 to T-0 is a 90-day window; T+30 is 30 days post-launch. Many launches compr
 | S-6 | Terms of Service (binding) drafted by counsel using [`../templates/tos-checklist.md`](../templates/tos-checklist.md) | UCTD (EU); FTC Act §5 (US); Código de Defesa do Consumidor (BR) | HIGH | All |
 | S-7 | Privacy Policy drafted by counsel using [`../templates/privacy-policy-checklist.md`](../templates/privacy-policy-checklist.md) | GDPR Art. 13/14; CCPA / state laws; LGPD Art. 9 | HIGH | All |
 | S-8 | Token-holder communications policy (insider-trading + market-abuse considerations) | MiCA Title VI (market abuse); SEC anti-fraud; CVM regras | HIGH | All applicable |
-| S-9 | Treasury management policy: custodian, multisig, key management, segregation | BCB Res 354/2025 (segregation); MiCA Art. 75 (CASP custody); NYDFS Part 200 (custody) | HIGH | All |
+| S-9 | Treasury management policy: custodian, multisig, key management, segregation | BCB Resoluções 519/520/521 (Nov 2025) (segregation); MiCA Art. 75 (CASP custody); NYDFS Part 200 (custody) | HIGH | All |
 | S-10 | Insurance review: D&O, crypto-asset insurance, cyber, professional liability | n/a (commercial decision) | MEDIUM | All |
 | S-11 | Tax planning: token-event taxonomy, jurisdictional optimization, withholding obligations | [`tax.md`](../domains/tax.md) | MEDIUM | All |
 | S-12 | Employment / contractor + token-comp framework with counsel | Employment domain (v0.2) | MEDIUM | All applicable |
@@ -73,7 +73,7 @@ T-90 to T-0 is a 90-day window; T+30 is 30 days post-launch. Many launches compr
 | FP-2 | File MiCA Title III / IV authorization application (if not already filed earlier) | MiCA Art. 16-23 / Art. 48-51 | HIGH | EU |
 | FP-3 | File Reg D Form D within 15 days of first sale; Reg A qualification (if applicable) | 17 CFR §230.503 | HIGH | US |
 | FP-4 | File CVM offering documents (if applicable) | CVM Resolução 160 / 88 / 175 | HIGH | BR |
-| FP-5 | Register PSAV with BCB (if not done earlier) | Lei 14.478/2022 + BCB Res 350 | HIGH | BR |
+| FP-5 | Register PSAV with BCB (if not done earlier) | Lei 14.478/2022 + BCB Resoluções 519/520/521 | HIGH | BR |
 | FP-6 | Finalize ToS + Privacy Policy + sign-up flows + consent capture | UCTD / GDPR / LGPD / CCPA | HIGH | All |
 | FP-7 | Sanctions program go-live: vendor live, list-update integration verified, screening tested | OFAC SCG (2021); EU restrictive measures | HIGH | All |
 | FP-8 | Test breach-notification pipeline (run a tabletop exercise) | GDPR Art. 33; LGPD Art. 48; SEC 8-K Item 1.05 (if public co) | HIGH | All |
@@ -97,7 +97,7 @@ T-90 to T-0 is a 90-day window; T+30 is 30 days post-launch. Many launches compr
 
 | # | Item | Statute / Source | Confidence | Jurisdictions |
 |---|---|---|---|---|
-| PL-1 | Ongoing KYC / AML operations: SAR / STR / COS filings, transaction monitoring, periodic re-screening | 31 CFR §1022.320 (US SAR); 5AMLD Art. 33 / AMLR Art. 50 (EU STR); BCB Res 353 (BR COS) | HIGH | All |
+| PL-1 | Ongoing KYC / AML operations: SAR / STR / COS filings, transaction monitoring, periodic re-screening | 31 CFR §1022.320 (US SAR); 5AMLD Art. 33 / AMLR Art. 50 (EU STR); BCB Resoluções 519/520/521 (BR COS) | HIGH | All |
 | PL-2 | Tax reporting setup: 1099-DA broker reporting (US), DAC8 CASP reporting (EU 2026 transactions due 2027), DEC RF (BR) | Form 1099-DA Final Rule; DAC8 (Council Dir 2023/2226); IN RFB 1888 | HIGH | All |
 | PL-3 | Breach-response readiness verified (incident response runbook, counsel on standby) | GDPR Art. 33; LGPD Art. 48 | HIGH | All |
 | PL-4 | Regulator-correspondence handling pathway active (24-hour escalation to counsel) | n/a | HIGH | All |
@@ -110,7 +110,7 @@ T-90 to T-0 is a 90-day window; T+30 is 30 days post-launch. Many launches compr
 When US, EU, and BR all apply, surface conflicts explicitly. Common ones:
 
 - **Whitepaper / disclosure language**: MiCA Art. 6 + SEC Reg D PPM + CVM offering memorandum have different content requirements. Counsel must satisfy all.
-- **Reserve standards (stablecoins)**: MiCA Title III/IV reserve mechanics + US state stablecoin laws + BCB Res 354 segregation. Verify cross-compatibility.
+- **Reserve standards (stablecoins)**: MiCA Title III/IV reserve mechanics + US state stablecoin laws + BCB Resoluções 519/520/521 segregation. Verify cross-compatibility.
 - **Travel Rule thresholds**: US ($3,000, proposed lower) vs EU (all CASP-to-CASP) vs BR (PSAV implementation). Adopt the strictest.
 - **Privacy disclosure**: GDPR Arts. 13/14 + CCPA notice + LGPD Art. 9 differ in detail. Layered + jurisdiction-specific addenda.
 

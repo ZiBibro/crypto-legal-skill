@@ -39,6 +39,7 @@ If a question references something that postdates the calendar version (e.g. "th
 | Privacy review, DPIA, data-flow audit | Command `/privacy-review`, template `dpia-lite.md` |
 | Multi-jurisdiction question, "where should I incorporate", "is X legal in Y" | Agent `jurisdiction-router`, reference `jurisdictions/<x>/overview.md` |
 | "Is my token a security" | Reference `domains/securities-law.md` + `domains/tokenomics-legality.md`; HIGH confidence on Howey decision tree; escalate live-token classification calls |
+| Solana token or program; on-chain control surface; Token-2022 extension; cNFT; liquid staking; validator | Reference `domains/solana-specific.md`; agents `token-inspector`, `program-authority-auditor`; keep the essential-managerial-efforts read qualitative with no numeric threshold; escalate live-token calls |
 | "Do I need a license" (MSB, BitLicense, CASP, VASP, BCB) | Reference `domains/aml-kyc.md`; jurisdictional sub-files when v0.2 lands |
 | Tax question | Reference `domains/tax.md` (token-event taxonomy); recommend crypto-licensed tax professional, NOT just counsel |
 | Sanctions / OFAC / Iran / Russia / North Korea | **HARD STOP.** Reference `domains/sanctions.md` for general framework, then recommend counsel before any further analysis. |

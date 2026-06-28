@@ -96,7 +96,7 @@ Apply the Brazilian "contrato de investimento coletivo" four-prong test (analogo
 
 **If yes**: the token is a "valor mobiliário" under Lei 6.385/1976 Art. 2º. CVM registration or exemption required (CVM Resolução 160 — public offering; Resolução 88 — crowdfunding; Resolução 175 — FIDC tokens for credit-rights backed).
 
-**Independent of CVM**: if the token is used for payment/investment and you provide services, BCB PSAV regime (Lei 14.478/2022 + BCB Res 350-355) applies.
+**Independent of CVM**: if the token is used for payment/investment and you provide services, BCB PSAV regime (Lei 14.478/2022 + BCB Resoluções 519/520/521 (Nov 2025)) applies.
 
 ## Step 6 — Cross-jurisdictional conflict check
 

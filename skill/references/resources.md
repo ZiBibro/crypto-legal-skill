@@ -56,7 +56,7 @@ External links the skill considers high-signal for crypto-legal research. Organi
 ### EU authorities
 - **ESMA** — esma.europa.eu; MiCA RTS + ITS publications
 - **EBA** — eba.europa.eu; MiCA EMT-related RTS
-- **EDPB** — edpb.europa.eu; GDPR guidelines including draft Guidelines on blockchain (2024)
+- **EDPB** — edpb.europa.eu; GDPR guidelines including Guidelines 02/2025 on blockchain (adopted 8 Apr 2025)
 - **AMLA** — amla.europa.eu (when operational)
 
 ### EU NCAs (national competent authorities — highest-relevance)
@@ -85,7 +85,7 @@ External links the skill considers high-signal for crypto-legal research. Organi
   - Decreto nº 11.563/2023 (designates BCB as PSAV regulator) — planalto.gov.br
 
 ### Brazilian regulators
-- **BCB** — bcb.gov.br; Resoluções + Circulares + Comunicados; PSAV regulatory framework via Resoluções 350-355
+- **BCB** — bcb.gov.br; Resoluções + Circulares + Comunicados; PSAV regulatory framework via Resoluções 519/520/521 (Nov 2025)
 - **CVM** — gov.br/cvm; Pareceres de Orientação + Resoluções including PO 40 and Resolução 175
 - **ANPD** — gov.br/anpd; Resoluções including Resolução CD/ANPD 4/2023 (dosimetria)
 - **COAF** — gov.br/coaf; Resoluções + reporting frameworks

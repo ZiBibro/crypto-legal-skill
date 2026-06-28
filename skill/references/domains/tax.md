@@ -42,8 +42,8 @@ The general framework in most jurisdictions: a disposition triggers gain/loss re
 | Notice 2014-21 | Virtual currency = property; FMV at receipt = income |
 | Rev. Rul. 2019-24 | Hard forks: ordinary income at FMV when received (post-Tezos litigation) |
 | FAQ on Virtual Currency Transactions | IRS practitioner FAQs (updated periodically) |
-| Notice 2023-34 | Validator-reward income on receipt |
-| Notice 2024-57 | NFT digital-asset characterization for "collectibles" treatment |
+| Rev. Rul. 2023-14 | Validator-reward income on receipt |
+| Notice 2023-27 | NFT digital-asset characterization for "collectibles" treatment |
 | Rev. Proc. 2024-28 | Safe harbor for unit-by-unit basis allocation across wallets |
 | Form 1099-DA (Final Rule, Jun 2024) | Broker reporting effective 2025 transactions (some phased for 2026); thresholds + reporting fields specified |
 
@@ -54,12 +54,12 @@ The general framework in most jurisdictions: a disposition triggers gain/loss re
 | Sell for fiat | Recognize capital gain/loss |
 | Crypto-for-crypto exchange | Recognize capital gain/loss (post-2017 TCJA; no §1031 treatment) |
 | Airdrop received with dominion/control | Ordinary income at FMV (Rev. Rul. 2019-24) |
-| Staking reward | Ordinary income at FMV when received (Notice 2023-34; *Jarrett v. United States* notwithstanding) |
+| Staking reward | Ordinary income at FMV when received (Rev. Rul. 2023-14; *Jarrett v. United States* notwithstanding) |
 | Liquidity provision | Generally taxable receipt of LP token (treated as property); subsequent fee accruals = ordinary income |
 | Wrap / unwrap | Active debate; conservative position treats as taxable; some argue economically equivalent (no recognition) — counsel needed |
 | Hard fork received | Ordinary income at FMV (Rev. Rul. 2019-24) |
 | NFT royalty income | Ordinary income (or self-employment if dealer) |
-| NFT held >1 year as "collectible" | 28% max LTCG rate (Notice 2024-57); standard analysis otherwise |
+| NFT held >1 year as "collectible" | 28% max LTCG rate (Notice 2023-27); standard analysis otherwise |
 | Donation to qualifying charity | Charitable deduction at FMV (>1 year hold); appraisal required for >$5,000 |
 
 ### State overlay
@@ -103,7 +103,7 @@ Implements the OECD Crypto-Asset Reporting Framework (CARF). Crypto-asset servic
 |---|---|
 | **Lei 8.981/1995, Art. 21** | Progressive capital-gains rate for pessoa física: 15% up to R$ 5M; 17.5% R$ 5-10M; 20% R$ 10-30M; 22.5% above R$ 30M |
 | **IN RFB nº 1.888/2019** | Monthly DEC RF reporting obligation for exchanges; individuals report when monthly operations exceed R$ 30,000 |
-| **IN RFB nº 2.178/2024** | Additional reporting requirements for offshore crypto holdings under Lei 14.754/2023 framework |
+| **IN RFB nº 2.180/2024** | Additional reporting requirements for offshore crypto holdings under Lei 14.754/2023 framework |
 | **Lei 14.754/2023** | Offshore investment fund taxation regime (15% on annual fictitious gain "come-cotas" semi-annual) — applies to certain crypto-asset structures held offshore |
 
 ### Common patterns (pessoa física)
@@ -120,7 +120,7 @@ Implements the OECD Crypto-Asset Reporting Framework (CARF). Crypto-asset servic
 ### Pessoa jurídica (corporate)
 - Lucro real or lucro presumido regime applies.
 - IFRS-aligned recognition for some categories.
-- Specific implications for PSAVs holding customer assets (segregation per BCB Res 354/2025).
+- Specific implications for PSAVs holding customer assets (segregation per BCB Resoluções 519/520/521 (Nov 2025)).
 
 ### Reporting vs payment
 - Reporting threshold (R$ 30,000/month operations for individuals) governs the **filing** obligation under IN 1888 — but a person below the threshold still pays tax on gains above the R$ 35,000/month sale-threshold.
@@ -132,7 +132,7 @@ Implements the OECD Crypto-Asset Reporting Framework (CARF). Crypto-asset servic
 | Crypto = X | Property (Notice 2014-21) | Property / asset (mostly) | Bem (general principles) |
 | Sale for fiat | Capital gain (ST/LT) | Country-dependent | Progressive 15-22.5% above R$ 35K/mo |
 | Crypto-for-crypto | Recognition event (post-TCJA) | Country-dependent (DE 1-year rule, etc.) | Taxable (RFB position; contested) |
-| Staking reward | Ordinary income (Notice 2023-34) | Country-dependent | Income at receipt (general principles) |
+| Staking reward | Ordinary income (Rev. Rul. 2023-14) | Country-dependent | Income at receipt (general principles) |
 | Airdrop | Ordinary income (Rev. Rul. 2019-24) | Country-dependent | Income at receipt (general principles) |
 | Wash-sale | Doesn't currently apply | N/A typically | Doesn't apply |
 | Wrap / unwrap | Conservative: recognition; contested | Country-dependent | Contested |

@@ -4,6 +4,8 @@ A Claude Code Skill that helps Solana-native founders triage legal and complianc
 
 > ⚠️ **Informational only — not legal advice.** This skill cites statutes, surfaces decision trees, and produces checklists. It does not create an attorney-client relationship. Retain licensed counsel before acting on any output. See [DISCLAIMER.md](DISCLAIMER.md).
 
+> 📄 **Companion research.** The legal analysis behind the Solana-native layer is published as an open paper: [Solana-Native Legal Risk: On-Chain Authority, Token Extensions, Compressed Assets, and the Limits of Decentralization](https://radionmaksymenko.substack.com/p/solana-native-legal-risk-on-chain) — United States, EU, and Brazil, current to June 2026.
+
 ## What this skill does
 
 | You ask | The skill does |
@@ -47,26 +49,51 @@ See [TODO.md](TODO.md) for the full expansion roadmap.
 ## Installation
 
 ```bash
-git clone <repo-url> crypto-legal-skill
+git clone https://github.com/solanabr/crypto-legal-skill crypto-legal-skill
 cd crypto-legal-skill
 ./install.sh
 ```
 
-The installer copies the skill into `~/.claude/skills/crypto-legal/` (and mirrors to `~/.codex/skills/crypto-legal/` if the codex CLI is detected). No network calls, no dependencies, no build step.
+> **Before this PR is merged:** the clone above pulls the sponsor's `main`, which does not yet include the Solana-native layer. To install the full skill (with the Solana agents) today, clone this branch instead: `git clone -b feat/solana-native-layer https://github.com/ZiBibro/crypto-legal-skill crypto-legal-skill && cd crypto-legal-skill && ./install.sh`
+
+The installer copies the skill into `~/.claude/skills/crypto-legal/`, registers the skill's flows as namespaced slash commands under `~/.claude/commands/crypto-legal/`, and mirrors the skill to `~/.codex/skills/crypto-legal/` if the codex CLI is detected. No network calls, no dependencies, no build step.
 
 Override the install location with `CLAUDE_SKILLS_HOME=/path/to/skills ./install.sh`.
 
 ## Use in Claude Code
 
-After install, invoke any of:
+The skill activates on its description, so the simplest path is to **describe your situation** in a Claude Code conversation:
+
+- "Is this mint a security? `<MINT_ADDRESS>`"
+- "Is my airdrop legal?"
+- "Review my Terms of Service"
+- "Do I need a BitLicense?"
+
+You can also invoke it explicitly with `/crypto-legal`. The installer registers the skill's flows as **namespaced** slash commands, so they never collide with your other commands:
 
 ```text
-/triage <free-form fact pattern>
-/launch-checklist
-/privacy-review
+/crypto-legal:triage <free-form fact pattern>
+/crypto-legal:launch-checklist
+/crypto-legal:privacy-review
+/crypto-legal:airdrop-assessment
 ```
 
-Or just describe a situation in a regular conversation — the skill activates on triggers in its description (see [`skill/SKILL.md`](skill/SKILL.md)).
+The routing logic lives in [`skill/SKILL.md`](skill/SKILL.md).
+
+## Solana-native layer
+
+This release adds a Solana-native legal layer: on Solana the chain itself is the evidence. The layer maps concrete on-chain facts onto the United States, European Union, and Brazil tests, and reads those facts through the Solana AI Kit Helius and solana-dev MCP servers.
+
+Why this is new: no kit submodule reasons about securities, AML, sanctions, tax, or data-protection law from on-chain facts, and no generic crypto-legal tool reads Solana runtime state.
+
+- `skill/references/domains/solana-specific.md` carries the cross-cutting primer: on-chain authority under the essential-managerial-efforts test (kept qualitative, with no numeric decentralization threshold), Token-2022 extensions, compressed NFTs, liquid staking and validators, interface and governance liability, stablecoins, and grants.
+- `agents/token-inspector.md` reads mint, freeze, and upgrade authority plus Token-2022 extensions for a given mint, then feeds the qualitative securities read.
+- `agents/program-authority-auditor.md` identifies the upgrade-authority holder and surfaces the qualitative implications.
+- `agents/sanctions-screening-runner.md` screens a wallet against OFAC, EU, COAF, and UN lists; orientation only, hard-stop to counsel.
+- `commands/airdrop-assessment.md` runs an airdrop mechanism through securities, tax, privacy, and sanctions reads.
+- `tests/solana-pressure-tests.md` holds acceptance and negative prompts plus a calendar-pin smoke test.
+
+Every claim carries a confidence label and a primary-source citation, and every load-bearing 2025-2026 instrument was independently verified against its official text.
 
 ## Repository layout
 
@@ -78,9 +105,10 @@ crypto-legal-skill/
 ├── DISCLAIMER.md             # Standing disclaimer master copy
 ├── TODO.md                   # Expansion roadmap
 ├── install.sh                # Pure-bash installer
-├── agents/                   # 2 agents (legal-triage, jurisdiction-router)
-├── commands/                 # 3 commands (/triage, /launch-checklist, /privacy-review)
+├── agents/                   # 5 agents (3 base plus token-inspector, program-authority-auditor, sanctions-screening-runner)
+├── commands/                 # 4 commands (3 base plus /airdrop-assessment)
 ├── rules/                    # 2 rules (legal-writing, disclaimer enforcement)
+├── tests/                    # Solana-native pressure-test battery
 └── skill/
     ├── SKILL.md              # Skill entry point
     └── references/           # Jurisdictional + domain knowledge

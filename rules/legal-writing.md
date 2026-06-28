@@ -17,7 +17,7 @@ Every assertion that describes what the law says must cite a statute, regulation
 |---|---|
 | "Crypto exchanges in the US generally need to register as money transmitters." | "A business that transmits crypto on behalf of others is a 'money transmitter' under 31 CFR §1010.100(ff)(5)(i)(B) and must register with FinCEN; state money-transmitter licensing may also apply (see, e.g., 23 NYCRR Part 200 for New York)." |
 | "GDPR has a right to be forgotten." | "GDPR Art. 17 establishes a right to erasure ('right to be forgotten'), subject to the exceptions in Art. 17(3)." |
-| "Brazilian crypto law requires registration." | "Lei nº 14.478/2022 (Marco Legal das Criptomoedas), Art. 1º-3º, defines and regulates PSAV (Prestador de Serviços de Ativos Virtuais); BCB is designated regulator per Decreto 11.563/2023 and operates the regime via Resoluções 350-355/2025." |
+| "Brazilian crypto law requires registration." | "Lei nº 14.478/2022 (Marco Legal das Criptomoedas), Art. 1º-3º, defines and regulates PSAV (Prestador de Serviços de Ativos Virtuais); BCB is designated regulator per Decreto 11.563/2023 and operates the regime via Resoluções 519/520/521/2025." |
 
 Court cases use the full caption: `SEC v. W.J. Howey Co., 328 U.S. 293 (1946)`. Year and reporter are mandatory. For recent unreported decisions: `SEC v. Coinbase, Inc., No. 23-cv-4738 (S.D.N.Y. Mar. 27, 2024)`.
 

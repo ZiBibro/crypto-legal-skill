@@ -159,7 +159,7 @@ Include:
 
 - [ ] LGPD-specific notices (encarregado contact; ANPD complaint pathway).
 - [ ] PT-BR translation (recommended; required for BR-targeted services).
-- [ ] BCB Res 352/353 customer-protection-related disclosures (for PSAVs).
+- [ ] BCB Resoluções 519/520/521 customer-protection-related disclosures (for PSAVs).
 
 ### Section 17 — EU-specific addendum
 

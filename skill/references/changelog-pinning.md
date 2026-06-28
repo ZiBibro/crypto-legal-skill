@@ -63,7 +63,7 @@ Examples that warrant a calendar bump:
 - A regulator pivot (e.g., a new SEC FinHub framework; a new ESMA RTS publication).
 - A statutory amendment (e.g., a US Congress-passed crypto-market-structure bill).
 - A national-DPA blockchain-specific guideline (e.g., EDPB Guidelines on blockchain final adoption).
-- A new BCB Resolução in the 350-series.
+- A new BCB Resolução in the 519/520/521 set.
 
 Examples that do **not** warrant a calendar bump:
 

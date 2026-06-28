@@ -53,7 +53,7 @@ Brief restatement of the five anchors with your interpretation. If you had to as
 |---|---|---|---|---|---|
 | United States | User residency in US + entity-domicile-by-incorporation OR active US marketing | SEC, CFTC, FinCEN, IRS, OFAC, state regulators (NYDFS, CA DFPI) | HIGH | `jurisdictions/us/overview.md` | State-level MTL adds complexity beyond federal |
 | European Union | EU user residency OR active EU marketing OR EU-established CASP | ESMA + national competent authority (BaFin/AMF/AFM/CONSOB/CySEC/CNMV/Banco de Portugal); EDPB for privacy; AMLA from 2027 | HIGH | `jurisdictions/eu/overview.md` | MiCA + GDPR + AMLR overlap |
-| Brazil | BR user residency OR active BR marketing OR BR-incorporated entity | BCB (PSAV regime), CVM (token classification), ANPD (privacy), COAF (AML reporting), Receita Federal (tax) | HIGH | `jurisdictions/brazil/overview.md` | Lei 14.478 + BCB Resoluções 350-355 |
+| Brazil | BR user residency OR active BR marketing OR BR-incorporated entity | BCB (PSAV regime), CVM (token classification), ANPD (privacy), COAF (AML reporting), Receita Federal (tax) | HIGH | `jurisdictions/brazil/overview.md` | Lei 14.478 + BCB Resoluções 519/520/521 |
 | [Stub jurisdictions, e.g.] UK | UK user residency or marketing | FCA, ICO, HMRC | STUB | (v0.2) | Out-of-scope for v0.1; retain UK counsel |
 
 If a jurisdiction does not apply, omit it from the matrix.

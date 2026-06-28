@@ -29,7 +29,7 @@ The EU regulates crypto through a stack of regulations and directives, layered o
 | **EBA** (European Banking Authority) | EMT/banking-side MiCA RTS/ITS; AML supervisory coordination (until AMLA fully operational) |
 | **EIOPA** (European Insurance and Occupational Pensions Authority) | Niche relevance to crypto-insurance |
 | **AMLA** (Authority for Anti-Money Laundering and Countering the Financing of Terrorism) | Direct supervision of high-risk obliged entities including selected CASPs; operational from 2025 with phase-in to 2027+ |
-| **EDPB** (European Data Protection Board) | GDPR coordination; issued draft Guidelines on blockchain (2024) |
+| **EDPB** (European Data Protection Board) | GDPR coordination; issued Guidelines 02/2025 on blockchain (adopted 8 Apr 2025) |
 | **National Competent Authorities (NCAs)** | Day-to-day MiCA + AML supervision per member state |
 
 ### NCAs by member state (highest-relevance for crypto)
@@ -72,7 +72,7 @@ The core EU crypto regulation. Six titles:
 
 Applies to processing of personal data of EU/EEA residents regardless of where the processor is located (Art. 3 extraterritorial reach). Crypto-specific tensions:
 
-- **Art. 17 right to erasure** vs. immutable on-chain commits — see EDPB Guidelines on blockchain (2024 draft) for the current EDPB position.
+- **Art. 17 right to erasure** vs. immutable on-chain commits — see EDPB Guidelines 02/2025 on blockchain (8 Apr 2025) for the current EDPB position.
 - **Art. 6 lawful basis** for on-chain processing — consent vs legitimate interest debate; CNIL France blockchain note (2018) and subsequent national-DPA guidance are persuasive.
 - **Art. 32 security** — public keys, ZK proofs, encryption strategies in design.
 - **Art. 33 breach notification** — 72-hour clock starts on awareness.

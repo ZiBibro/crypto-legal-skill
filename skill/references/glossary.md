@@ -78,7 +78,7 @@ A reference map for the terminology used across crypto-legal regimes. The same E
 
 **ECB** — European Central Bank.
 
-**EDPB** — European Data Protection Board. Issues GDPR coordination guidelines including the draft Guidelines on blockchain (2024).
+**EDPB** — European Data Protection Board. Issues GDPR coordination guidelines including the Guidelines 02/2025 on blockchain (adopted 8 Apr 2025).
 
 **EMT** — E-Money Token. MiCA Title IV. A crypto-asset that purports to maintain a stable value by referencing the value of one official currency. Issued by an authorized EMI or credit institution; reserve segregation + redemption at par.
 

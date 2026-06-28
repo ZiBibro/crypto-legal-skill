@@ -9,7 +9,7 @@ Anti-Money-Laundering (AML) and Know-Your-Customer (KYC) obligations are jurisdi
 
 This primer covers the framework. Jurisdiction-specific filing mechanics are v0.2 (see [TODO.md §A-C](../../../TODO.md)).
 
-**Confidence:** HIGH for the framework + US/EU/BR specifics; MEDIUM for in-flight changes (EU AMLR/AMLA full operation 2027, FinCEN proposed CVC-mixing rule, BCB Res 350-355 implementation calendar).
+**Confidence:** HIGH for the framework + US/EU/BR specifics; MEDIUM for in-flight changes (EU AMLR/AMLA full operation 2027, FinCEN proposed CVC-mixing rule, BCB Resoluções 519/520/521 (Nov 2025) implementation calendar).
 **Last statutory review:** 2026-06-15.
 
 ## When AML / KYC applies
@@ -99,10 +99,10 @@ Replaces fragmented national AML laws with a single directly-applicable rulebook
 ## Brazil: BCB PSAV AML regime + COAF
 
 - **Lei nº 9.613/1998** — base AML statute (Lavagem de Dinheiro).
-- **BCB Resolução 353/2025** (within the PSAV framework) — KYC + transaction monitoring + COAF integration for PSAVs.
+- **BCB Resoluções 519/520/521 (Nov 2025)** (within the PSAV framework) — KYC + transaction monitoring + COAF integration for PSAVs.
 - **COAF** — financial intelligence unit; receives suspicious-activity reports.
 
-### PSAV AML obligations (per Res 353)
+### PSAV AML obligations (per Resoluções 519/520/521)
 - KYC at onboarding + ongoing — verify per BCB risk-based criteria.
 - Transaction monitoring proportional to customer risk + transaction profile.
 - Suspicious-activity reporting to COAF (Comunicação de Operação Suspeita — COS) sem atraso injustificado.
@@ -117,9 +117,9 @@ Brazil implements a Travel-Rule analogue at the PSAV level per BCB regulation. V
 
 | Obligation | US (MSB) | EU (AMLR/CASP) | BR (PSAV) |
 |---|---|---|---|
-| Registration / Authorization | FinCEN Form 107 + state MTL portfolio | NCA authorization under MiCA Title V + AMLR designation | BCB Res 350 authorization |
-| KYC at onboarding | CIP under §1010.230 | CDD under AMLR Arts. 19-30 | BCB Res 353 + Circular |
-| Ongoing monitoring | Risk-based, no minimum frequency | Risk-based with periodic refresh per AMLR | Risk-based, BCB Res 353 |
+| Registration / Authorization | FinCEN Form 107 + state MTL portfolio | NCA authorization under MiCA Title V + AMLR designation | BCB Resoluções 519/520/521 authorization |
+| KYC at onboarding | CIP under §1010.230 | CDD under AMLR Arts. 19-30 | BCB Resoluções 519/520/521 + Circular |
+| Ongoing monitoring | Risk-based, no minimum frequency | Risk-based with periodic refresh per AMLR | Risk-based, BCB Resoluções 519/520/521 |
 | Suspicious activity report | SAR within 30 days, to FinCEN | STR sem atraso injustificado, to national FIU | COS sem atraso injustificado, to COAF |
 | Above-threshold cash reporting | CTR ≥ $10,000 | Per national rules; AMLR harmonizes | COE per Resolução thresholds |
 | Travel Rule | $3,000 (proposed $250 cross-border) | All CASP-to-CASP transfers (TFR); >€1,000 for self-hosted-wallet transfers | PSAV implementation per BCB |
@@ -155,7 +155,7 @@ Vendor-tooling (Chainalysis, TRM Labs, Elliptic, ComplyAdvantage) is industry-st
 
 - State-by-state MTL survey detail (v0.2 — see [TODO.md §A](../../../TODO.md)).
 - AMLR Article-by-article CDD specifics (v0.2 — see [TODO.md §B](../../../TODO.md)).
-- BCB Resolução 353 implementation timeline detail (verify against BCB calendar).
+- BCB Resoluções 519/520/521 implementation timeline detail (verify against BCB calendar).
 - Beneficial ownership reporting under US CTA (Corporate Transparency Act) — status post-2024 court challenges is uncertain.
 
 ## Hard stops
@@ -167,4 +167,4 @@ Vendor-tooling (Chainalysis, TRM Labs, Elliptic, ComplyAdvantage) is industry-st
 
 ---
 
-*Current as of 2026-06. Confidence: HIGH for the framework + US/EU/BR specifics; MEDIUM for in-flight specifics (EU AMLA/AMLR phase-in, FinCEN CVC mixing rule, BCB Res 350-355 implementation). Informational only — not legal advice.*
+*Current as of 2026-06. Confidence: HIGH for the framework + US/EU/BR specifics; MEDIUM for in-flight specifics (EU AMLA/AMLR phase-in, FinCEN CVC mixing rule, BCB Resoluções 519/520/521 (Nov 2025) implementation). Informational only — not legal advice.*

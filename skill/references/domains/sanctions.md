@@ -67,7 +67,7 @@ For SDN-listed persons:
 | **OFAC FAQs 559-561** | General virtual currency sanctions guidance |
 | **OFAC FAQ 646** | Mixing-service guidance (post-Tornado Cash) |
 | **Sanctions Compliance Guidance for the Virtual Currency Industry** (Oct 2021) | Comprehensive OFAC guidance on screening, reporting, OFAC compliance programs |
-| **Tornado Cash designation** | Aug 8, 2022 — Tornado Cash entity + smart contract addresses added to SDN. *Van Loon v. Treasury*, 11th Cir. 2024 — reversed the smart-contract-address portion; Treasury's authority to sanction persons + the entity itself unchanged. The post-decision OFAC posture is in flux; verify with sanctions counsel. |
+| **Tornado Cash designation** | Aug 8, 2022 — Tornado Cash entity + smart contract addresses added to SDN. *Van Loon v. Treasury*, 122 F.4th 549 (5th Cir. 2024) — reversed the smart-contract-address portion; Treasury's authority to sanction persons + the entity itself unchanged. The post-decision OFAC posture is in flux; verify with sanctions counsel. |
 
 ### Reporting + voluntary disclosure
 
@@ -116,7 +116,7 @@ Brazil does not maintain a parallel SDN-style domestic sanctions list at scale. 
 - **Treaty obligations** — bilateral / multilateral.
 - **COAF lists** — internal AML lists for suspicious-activity targeting.
 
-Brazilian PSAVs under BCB Res 353/2025 must screen against international sanctions lists; specific implementation per BCB + COAF guidance.
+Brazilian PSAVs under BCB Resoluções 519/520/521 (Nov 2025) must screen against international sanctions lists; specific implementation per BCB + COAF guidance.
 
 ## Screening architecture
 
@@ -156,9 +156,9 @@ The choice of vendor is risk-management; the obligation to screen is regulatory.
 The state of the art (as of 2026-06):
 
 - OFAC designated Tornado Cash in Aug 2022 (SDN entity + specific smart-contract addresses).
-- *Van Loon v. Treasury*, 11th Cir. (Aug 2024) reversed the smart-contract-address portion of the designation, holding that immutable smart contracts are not "property" subject to OFAC's IEEPA authority.
+- *Van Loon v. Treasury*, 5th Cir. (Nov 2024) reversed the smart-contract-address portion of the designation, holding that immutable smart contracts are not "property" subject to OFAC's IEEPA authority.
 - Treasury's authority to sanction the Tornado Cash entity, its developers (where US persons), and persons facilitating Tornado Cash use is unchanged.
-- The *Van Loon* decision is binding in the 11th Circuit; persuasive elsewhere. OFAC's post-decision posture is in flux.
+- The *Van Loon* decision is binding in the 5th Circuit; persuasive elsewhere. OFAC's post-decision posture is in flux.
 
 **Practical implication**: do not assume *Van Loon* opens up free engagement with sanctioned protocols. Consult counsel before any engagement with Tornado Cash or similar.
 

@@ -9,7 +9,7 @@ Crypto products process personal data even when they think they don't. Wallet ad
 
 The three primary regimes have substantially similar architecture and substantially different details.
 
-**Confidence:** HIGH for framework + GDPR / LGPD / CCPA architecture; MEDIUM for on-chain reconciliation (EDPB Guidelines on blockchain in draft as of 2024; national-DPA positions evolving).
+**Confidence:** HIGH for framework + GDPR / LGPD / CCPA architecture; MEDIUM for on-chain reconciliation (EDPB Guidelines 02/2025 on blockchain (adopted 8 Apr 2025); national-DPA positions evolving).
 **Last statutory review:** 2026-06-15.
 
 ## PII taxonomy
@@ -70,7 +70,7 @@ The right to erasure conflicts with on-chain immutability. The state of the art:
 
 ### Position summary (as of 2026-06)
 
-- **EDPB Guidelines on blockchain** (draft 2024) — the consolidated EU position, expected to land in final form imminently. The draft articulates: prefer off-chain storage of personal data with on-chain reference; if personal data is on-chain, the storage method must accommodate Art. 17 (e.g., encryption with destruction-of-key serving as functional erasure; commitments with off-chain redaction; hashed identifiers).
+- **EDPB Guidelines 02/2025 on blockchain** (adopted 8 Apr 2025) — the consolidated EU position, expected to land in final form imminently. The draft articulates: prefer off-chain storage of personal data with on-chain reference; if personal data is on-chain, the storage method must accommodate Art. 17 (e.g., encryption with destruction-of-key serving as functional erasure; commitments with off-chain redaction; hashed identifiers).
 - **CNIL France blockchain note** (2018) — early position; permitted hashed/encrypted on-chain commits when the off-chain data could be deleted; flagged that controllership and processorship are unsettled.
 - **AEPD Spain** + **ICO UK** + **Garante Italy** + **CNPD Portugal** — varying detail-level positions; broadly similar.
 - **LGPD Art. 18, VI + IV** — ANPD has not issued a comparable blockchain-specific guidance as of 2026-06; expect convergence with EDPB direction.

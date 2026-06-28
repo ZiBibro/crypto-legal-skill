@@ -109,6 +109,9 @@ See `references/confidence-labels.md` for full schema and worked examples.
 |---|---|---|
 | Free-form fact pattern; user does not know which domain applies | [`agents/legal-triage.md`](../agents/legal-triage.md) | Classify domain(s), propose jurisdictional scope, recommend next command. Run first on most ambiguous intake. |
 | User has multi-jurisdiction situation; needs jurisdictional matrix | [`agents/jurisdiction-router.md`](../agents/jurisdiction-router.md) | Given fact pattern, return which regulators apply with confidence labels and reading order. |
+| Token mint address; on-chain control surface; "is this Solana token a security" | [`agents/token-inspector.md`](../agents/token-inspector.md) | Read mint, freeze, and upgrade authority plus Token-2022 extensions via the Helius MCP; feed the qualitative essential-managerial-efforts read. |
+| Solana program backing a token; "who controls this program" | [`agents/program-authority-auditor.md`](../agents/program-authority-auditor.md) | Identify the upgrade-authority holder (renounced, team key, multisig, or DAO); surface qualitative securities and consumer-protection implications. |
+| Wallet address; "screen this address"; OFAC exposure | [`agents/sanctions-screening-runner.md`](../agents/sanctions-screening-runner.md) | Screen against OFAC, EU, COAF, and UN lists through the Helius MCP; orientation only, hard-stop to counsel. |
 
 Future agents (v0.2+): `compliance-officer`, `contract-analyzer`, `tokenomics-lawyer`. See [TODO.md](../TODO.md) §H.
 
@@ -119,6 +122,7 @@ Future agents (v0.2+): `compliance-officer`, `contract-analyzer`, `tokenomics-la
 | "Where do I start" / unstructured situation | [`/triage`](../commands/triage.md) | Domain map + jurisdictional scope + next-action + escalation flags. |
 | "I'm planning to launch a token / product" | [`/launch-checklist`](../commands/launch-checklist.md) | Calendar-mapped T-90 → T+30 checklist with US/EU/BR variants merged. |
 | "Privacy review of my product / feature" | [`/privacy-review`](../commands/privacy-review.md) | DPIA-lite walkthrough using `templates/dpia-lite.md`. |
+| "Is my airdrop legal"; airdrop mechanism design | [`/airdrop-assessment`](../commands/airdrop-assessment.md) | Walks the airdrop through securities, tax, privacy, and sanctions reads; returns a go, hold, narrow, or counsel verdict with confidence labels. |
 
 Future commands (v0.2+): `/due-diligence`, `/contract-review`, `/jurisdiction-compare`. See [TODO.md](../TODO.md) §I.
 
@@ -139,7 +143,8 @@ SKILL.md (you are here)
   │     ├── tax.md                 ← token-event taxonomy
   │     ├── privacy-data-protection.md  ← GDPR/CCPA/LGPD matrix
   │     ├── tokenomics-legality.md ← decision tree
-  │     └── sanctions.md           ← OFAC + EU + screening
+  │     ├── sanctions.md           ← OFAC + EU + screening
+  │     └── solana-specific.md     ← mint/freeze/upgrade authority, Token-2022, cNFT, staking
   │
   ├── references/workflows/
   │     ├── triage.md              ← the legal-triage agent's decision tree

@@ -8,9 +8,11 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SKILL_NAME="crypto-legal"
 SKILL_VERSION="2026-06"
 
-# Allow override via env var; default to ~/.claude/skills/
+# Allow override via env var; default to ~/.claude/skills/ and ~/.claude/commands/
 SKILLS_HOME="${CLAUDE_SKILLS_HOME:-$HOME/.claude/skills}"
+COMMANDS_HOME="${CLAUDE_COMMANDS_HOME:-$HOME/.claude/commands}"
 SKILL_HOME="$SKILLS_HOME/$SKILL_NAME"
+CMD_HOME="$COMMANDS_HOME/$SKILL_NAME"
 CODEX_HOME="$HOME/.codex/skills/$SKILL_NAME"
 
 # Color helpers
@@ -48,12 +50,12 @@ existing_install_check() {
     choice="${choice:-u}"
     case "$choice" in
       u|U)
-        printf "  → overwriting in place\n\n"
+        printf "  -> overwriting in place\n\n"
         ;;
       b|B)
         local backup_dir="${SKILL_HOME}.backup.$(date +%Y%m%d-%H%M%S)"
         mv "$SKILL_HOME" "$backup_dir"
-        printf "  → backed up to %s\n\n" "$backup_dir"
+        printf "  -> backed up to %s\n\n" "$backup_dir"
         ;;
       a|A)
         printf "${RED}Aborted.${RESET}\n"
@@ -94,6 +96,22 @@ install_claude() {
   printf "${GREEN}[ok]${RESET}   installed to %s\n" "$SKILL_HOME"
 }
 
+install_commands() {
+  # Register the skill's flows as namespaced Claude Code slash commands:
+  # ~/.claude/commands/crypto-legal/<name>.md  becomes  /crypto-legal:<name>
+  if [[ -d "$SCRIPT_DIR/commands" ]]; then
+    mkdir -p "$CMD_HOME"
+    local f base
+    for f in "$SCRIPT_DIR"/commands/*.md; do
+      [[ -e "$f" ]] || continue
+      base="$(basename "$f")"
+      # Re-home skill-relative links (../X) to the absolute installed skill path
+      sed "s#](\.\./#]($SKILL_HOME/#g" "$f" > "$CMD_HOME/$base"
+    done
+    printf "${GREEN}[ok]${RESET}   commands installed to %s (namespaced as /%s:<command>)\n" "$CMD_HOME" "$SKILL_NAME"
+  fi
+}
+
 install_codex() {
   if command -v codex >/dev/null 2>&1; then
     mkdir -p "$(dirname "$CODEX_HOME")"
@@ -104,11 +122,13 @@ install_codex() {
 
 print_invocation_examples() {
   printf "\n${BOLD}Usage${RESET}\n"
-  printf "  In Claude Code, invoke directly:\n"
-  printf "    ${CYAN}/triage <describe your situation>${RESET}\n"
-  printf "    ${CYAN}/launch-checklist${RESET}\n"
-  printf "    ${CYAN}/privacy-review${RESET}\n\n"
-  printf "  Or ask in natural language: ${CYAN}\"is my airdrop legal?\"${RESET}, ${CYAN}\"review my ToS\"${RESET}, ${CYAN}\"do I need a BitLicense?\"${RESET}\n\n"
+  printf "  Just describe your situation in Claude Code; the skill activates on its description:\n"
+  printf "    ${CYAN}\"is this mint a security? <MINT_ADDRESS>\"${RESET}\n"
+  printf "    ${CYAN}\"is my airdrop legal?\"${RESET}\n"
+  printf "    ${CYAN}\"review my Terms of Service\"${RESET}\n"
+  printf "    ${CYAN}\"do I need a BitLicense?\"${RESET}\n"
+  printf "  Or invoke it explicitly: ${CYAN}/%s${RESET}\n" "$SKILL_NAME"
+  printf "  Namespaced commands: ${CYAN}/%s:triage${RESET}, ${CYAN}/%s:launch-checklist${RESET}, ${CYAN}/%s:privacy-review${RESET}, ${CYAN}/%s:airdrop-assessment${RESET}\n\n" "$SKILL_NAME" "$SKILL_NAME" "$SKILL_NAME" "$SKILL_NAME"
 }
 
 print_disclaimer() {
@@ -127,6 +147,7 @@ main() {
   prereq_check
   existing_install_check
   install_claude
+  install_commands
   install_codex
   print_invocation_examples
   print_disclaimer
